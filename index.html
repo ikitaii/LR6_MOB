@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Wayfarer — Главная</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <a href="index.html">
+            <img class="logo" src="LOGO.svg" alt="Wayfarer">
+        </a>
+
+        <nav class="nav">
+            <a href="#catalog">Каталог</a>
+            <a href="index.html">Главная</a>
+            <a href="profile.html">Профиль</a>
+            <a class="favorite" href="#" aria-label="Избранное">♡</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>Твои путешествия<br>ближе</h1>
+        </div>
+    </section>
+
+    <section class="search-box">
+        <div class="container">
+            <div class="search-panel">
+                <input class="search-input" type="text" placeholder="⌕  Быстрый поиск">
+                <div class="categories">
+                    <a class="category active" href="#">Скидки %</a>
+                    <a class="category" href="#">Туры</a>
+                    <a class="category" href="#">Билеты</a>
+                    <a class="category" href="#">Авиабилеты</a>
+                    <a class="category" href="#">Жильё</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section" id="catalog">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Популярные направления</h2>
+                <p class="section-subtitle">Подборка туров в духе страницы и профиля</p>
+            </div>
+
+            <div class="tours">
+                <article class="tour-card">
+                    <div class="tour-image nice"></div>
+                    <div class="tour-info">
+                        <div class="tour-top">
+                            <h3 class="tour-name">Тур по Ницце</h3>
+                            <span class="price">1000$</span>
+                        </div>
+                        <div class="dates">
+                            <div class="date">
+                                <strong>02</strong>
+                                <span>марта</span>
+                            </div>
+                            <div class="date">
+                                <strong>16</strong>
+                                <span>марта</span>
+                            </div>
+                        </div>
+                        <a class="tour-button" href="tour.html">Смотреть</a>
+                    </div>
+                </article>
+
+                <article class="tour-card">
+                    <div class="tour-image sea"></div>
+                    <div class="tour-info">
+                        <div class="tour-top">
+                            <h3 class="tour-name">Тур по побережью</h3>
+                            <span class="price">1200$</span>
+                        </div>
+                        <div class="dates">
+                            <div class="date">
+                                <strong>05</strong>
+                                <span>апреля</span>
+                            </div>
+                            <div class="date">
+                                <strong>19</strong>
+                                <span>апреля</span>
+                            </div>
+                        </div>
+                        <a class="tour-button" href="tour.html">Смотреть</a>
+                    </div>
+                </article>
+
+                <article class="tour-card">
+                    <div class="tour-image elbrus"></div>
+                    <div class="tour-info">
+                        <div class="tour-top">
+                            <h3 class="tour-name">Тур | Эльбрус</h3>
+                            <span class="price">190$</span>
+                        </div>
+                        <div class="dates">
+                            <div class="date">
+                                <strong>02</strong>
+                                <span>октября</span>
+                            </div>
+                            <div class="date">
+                                <strong>16</strong>
+                                <span>октября</span>
+                            </div>
+                        </div>
+                        <a class="tour-button" href="tour.html">Смотреть</a>
+                    </div>
+                </article>
+
+                <article class="tour-card">
+                    <div class="tour-image philippines"></div>
+                    <div class="tour-info">
+                        <div class="tour-top">
+                            <h3 class="tour-name">Тур | Филиппины</h3>
+                            <span class="price">450$</span>
+                        </div>
+                        <div class="dates">
+                            <div class="date">
+                                <strong>02</strong>
+                                <span>октября</span>
+                            </div>
+                            <div class="date">
+                                <strong>16</strong>
+                                <span>октября</span>
+                            </div>
+                        </div>
+                        <a class="tour-button" href="tour.html">Смотреть</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Осенний выбор</h2>
+                <p class="section-subtitle">Акцентный тур с датами и быстрым бронированием</p>
+            </div>
+
+            <div class="featured">
+                <div class="featured-content">
+                    <div class="featured-text">
+                        <p>Новинки этой осени</p>
+                        <h2>Тур | Эльбрус</h2>
+                        <span class="featured-price">от 190$</span>
+                    </div>
+                    <div class="featured-dates">
+                        <div class="date">
+                            <strong>02</strong>
+                            <span>октября</span>
+                        </div>
+                        <div class="date">
+                            <strong>16</strong>
+                            <span>октября</span>
+                        </div>
+                    </div>
+                    <a class="featured-button" href="tour.html">Бронировать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Короткие поездки</h2>
+                <p class="section-subtitle">Ещё несколько направлений в фирменной визуальной системе</p>
+            </div>
+
+            <div class="tours">
+                <article class="tour-card">
+                    <div class="tour-image nice"></div>
+                    <div class="tour-info">
+                        <div class="tour-top">
+                            <h3 class="tour-name">Тур по Ницце</h3>
+                            <span class="price">1000$</span>
+                        </div>
+                        <div class="dates">
+                            <div class="date"><strong>02</strong><span>марта</span></div>
+                            <div class="date"><strong>16</strong><span>марта</span></div>
+                        </div>
+                        <a class="tour-button" href="tour.html">Смотреть</a>
+                    </div>
+                </article>
+                 <article class="tour-card">
+                    <div class="tour-image nice"></div>
+                    <div class="tour-info">
+                        <div class="tour-top">
+                            <h3 class="tour-name">Тур по Ницце</h3>
+                            <span class="price">1000$</span>
+                        </div>
+                        <div class="dates">
+                            <div class="date"><strong>02</strong><span>марта</span></div>
+                            <div class="date"><strong>16</strong><span>марта</span></div>
+                        </div>
+                        <a class="tour-button" href="tour.html">Смотреть</a>
+                    </div>
+                </article>
+                 <article class="tour-card">
+                    <div class="tour-image nice"></div>
+                    <div class="tour-info">
+                        <div class="tour-top">
+                            <h3 class="tour-name">Тур по Ницце</h3>
+                            <span class="price">1000$</span>
+                        </div>
+                        <div class="dates">
+                            <div class="date"><strong>02</strong><span>марта</span></div>
+                            <div class="date"><strong>16</strong><span>марта</span></div>
+                        </div>
+                        <a class="tour-button" href="tour.html">Смотреть</a>
+                    </div>
+                </article>
+                <article class="tour-card">
+                    <div class="tour-image sea"></div>
+                    <div class="tour-info">
+                        <div class="tour-top">
+                            <h3 class="tour-name">Морской отдых</h3>
+                            <span class="price">1200$</span>
+                        </div>
+                        <div class="dates">
+                            <div class="date"><strong>10</strong><span>июня</span></div>
+                            <div class="date"><strong>24</strong><span>июня</span></div>
+                        </div>
+                        <a class="tour-button" href="tour.html">Смотреть</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Рекомендуем сейчас</h2>
+                <p class="section-subtitle">Яркий тур для следующего отпуска</p>
+            </div>
+
+            <div class="featured" style="background-image: linear-gradient(rgba(0,23,29,0.15), rgba(0,23,29,0.55)), url('https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=1600&q=85');">
+                <div class="featured-content">
+                    <div class="featured-text">
+                        <p>Новинки этой осени</p>
+                        <h2>Тур | Филиппины</h2>
+                        <span class="featured-price">от 450$</span>
+                    </div>
+                    <div class="featured-dates">
+                        <div class="date">
+                            <strong>02</strong>
+                            <span>октября</span>
+                        </div>
+                        <div class="date">
+                            <strong>16</strong>
+                            <span>октября</span>
+                        </div>
+                    </div>
+                    <a class="featured-button" href="tour.html">Бронировать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-column">
+            <img class="footer-logo" src="LOGO.svg" alt="Wayfarer">
+            <span>Твои путешествия ближе.</span>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-title">Навигация</h3>
+            <a href="#catalog">Каталог</a>
+            <a href="index.html">Главная</a>
+            <a href="profile.html">Профиль</a>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="footer-title">Помощь</h3>
+            <a href="#">Поддержка</a>
+            <a href="#">Условия</a>
+            <a href="#">Контакты</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>

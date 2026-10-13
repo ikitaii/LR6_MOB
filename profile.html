@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Wayfarer — Профиль</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header class="header">
+    <div class="container header-inner">
+        <a href="index.html"><img class="logo" src="LOGO.svg" alt="Wayfarer"></a>
+        <nav class="nav">
+            <a href="index.html#catalog">Каталог</a>
+            <a href="index.html">Главная</a>
+            <a href="profile.html">Профиль</a>
+            <a class="favorite" href="#">♡</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="page-hero">
+        <div class="container">
+            <h1>Профиль</h1>
+        </div>
+    </section>
+
+    <section class="page-content">
+        <div class="container profile">
+            <div class="profile-top">
+                <div class="profile-card">
+                    <div class="profile-user">
+                        <img class="avatar" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=200&q=80" alt="Аватар">
+                        <div>
+                            <h2 class="profile-name">Екатерина</h2>
+                            <p class="profile-email">katty.travel@wayfarer.com</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-bookings">
+                    <h3 class="profile-section-title">Мои бронирования</h3>
+                    <div class="booking-card">
+                        <div class="booking-info">
+                            <h3>Тур | Эльбрус</h3>
+                            <p>02 окт — 16 окт</p>
+                        </div>
+                        <span class="booking-status paid">Оплачен</span>
+                    </div>
+                    <div class="booking-card">
+                        <div class="booking-info">
+                            <h3>Тур по Ницце</h3>
+                            <p>02 мар — 16 мар</p>
+                        </div>
+                        <span class="booking-status pending">Ожидает</span>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <h3 class="profile-section-title">Настройки аккаунта</h3>
+                <div class="profile-settings">
+                    <div class="setting">
+                        <div class="setting-header">
+                            <span>Личные данные</span>
+                            <span class="setting-arrow">›</span>
+                        </div>
+                        <div class="setting-body">
+                            <div class="setting-body-inner">
+                                <div class="setting-field">
+                                    <label>Имя</label>
+                                    <input type="text" value="Екатерина">
+                                </div>
+                                <div class="setting-field">
+                                    <label>Фамилия</label>
+                                    <input type="text" value="Иванова">
+                                </div>
+                                <div class="setting-field">
+                                    <label>Email</label>
+                                    <input type="email" value="katty.travel@wayfarer.com">
+                                </div>
+                                <div class="setting-field">
+                                    <label>Телефон</label>
+                                    <input type="tel" value="+7 900 123-45-67">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting">
+                        <div class="setting-header" onclick="toggleSetting(this)">
+                            <span>Уведомления</span>
+                            <span class="setting-arrow">›</span>
+                        </div>
+                        <div class="setting-body">
+                            <div class="setting-body-inner">
+                                <div class="toggle-row">
+                                    <span>Уведомления о бронированиях</span>
+                                    <div class="toggle active" onclick="this.classList.toggle('active')"></div>
+                                </div>
+                                <div class="toggle-row">
+                                    <span>Промоакции и скидки</span>
+                                    <div class="toggle" onclick="this.classList.toggle('active')"></div>
+                                </div>
+                                <div class="toggle-row">
+                                    <span>Напоминания о поездках</span>
+                                    <div class="toggle active" onclick="this.classList.toggle('active')"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting">
+                        <div class="setting-header" onclick="toggleSetting(this)">
+                            <span>Способ оплаты</span>
+                            <span class="setting-arrow">›</span>
+                        </div>
+                        <div class="setting-body">
+                            <div class="setting-body-inner">
+                                <div class="payment-cards">
+                                    <div class="payment-card">
+                                        <span class="payment-card-icon">💳</span>
+                                        <span class="payment-card-number">•••• 7679</span>
+                                        <span class="payment-card-label">Основная</span>
+                                    </div>
+                                    <div class="payment-card">
+                                        <span class="payment-card-icon">💳</span>
+                                        <span class="payment-card-number">•••• 6530</span>
+                                        <span class="payment-card-label">VISA</span>
+                                    </div>
+                                    <div class="payment-card add-card">
+                                        <span class="payment-card-icon">＋</span>
+                                        <span>Привязать карту</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="setting">
+                        <div class="setting-header" onclick="toggleSetting(this)">
+                            <span>Поддержка</span>
+                            <span class="setting-arrow">›</span>
+                        </div>
+                        <div class="setting-body">
+                            <div class="setting-body-inner">
+                                <div class="support-form">
+                                    <div class="setting-field">
+                                        <label>Ваш вопрос</label>
+                                        <input type="text" placeholder="Опишите ваш вопрос...">
+                                    </div>
+                                    <div class="setting-field">
+                                        <label>Сообщение для чата</label>
+                                        <textarea placeholder="Напишите сообщение..."></textarea>
+                                    </div>
+                                    <button class="support-button" type="button">Отправить</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="logout-button" href="login.html">Выйти из аккаунта</a>
+        </div>
+    </section>
+</main>
+
+<footer class="footer">
+    <div class="container footer-inner">
+        <div class="footer-column">
+            <img class="footer-logo" src="LOGO.svg" alt="Wayfarer">
+            <span>Твои путешествия ближе.</span>
+        </div>
+        <div class="footer-column">
+            <h3 class="footer-title">Навигация</h3>
+            <a href="index.html#catalog">Каталог</a>
+            <a href="index.html">Главная</a>
+            <a href="profile.html">Профиль</a>
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+
+</body>
+</html>
